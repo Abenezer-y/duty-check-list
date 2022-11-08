@@ -31,9 +31,20 @@
           <th scope="col">Support</th>
         </tr>
       </thead>
+
+
       <tbody>
         <tr>
-          <th scope="row"><input type="checkbox" class="custom-control-input" id="customCheck1"></th>
+          <th scope="row"><input id='check_0' type="checkbox" class="custom-control-input" id="customCheck1"></th>
+          <script>
+            var x = document.getElementById("check_0").value;
+            if (x == 'checked') {
+              document.body = "<h1>Today's date is " + x + "</h1>";
+              } else {
+                document.body = "<h1>Today</h1>";}
+            
+          </script>
+
           <th>15:30</th>
           <td>Duty Manager Arrival</td>
           <td>4</td>
